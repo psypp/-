@@ -64,12 +64,16 @@ Page({
     
   },
 
-  getMyInfo:function(e){
-    let info=e.detail.userInfo;
-    this.setData({
-      src:info.avatarUrl,
-      name:info.nickName
+  getMyInfo: function(e) {
+    wx.getUserProfile({
+      desc: '展示用户信息', 
+      success: (res) => {
+        console.log(res)
+        this.setData({
+          src: res.userInfo.avatarUrl,
+          name: res.userInfo.nickName
+        })
+      }
     })
-    console:log(e.detail.userInfo)
   }
 })
