@@ -1,0 +1,13 @@
+<view class='card'>
+  <image src='/images/card.png' bindtap='startAnimationInterval' class="bth_image2" mode="aspectFit" animation="{{animation}}"></image>
+  <button class='button' bindtap='buttonTap' >占卜</button>
+    <modal title='{{title}}' hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+      <view>
+        <image class="image" src='{{image}}'  mode='aspectFill'></image>
+      </view>
+      {{text}}
+    </modal>
+  <!-- audio.wxml -->
+    <audio name="CLEAR" author="坂本真绫" src="/musics/1.mp3" id="myAudio"  poster='/images/poster.png' controls loop></audio>
+</view>
+

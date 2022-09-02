@@ -1,0 +1,40 @@
+.card{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(https://www.helloimg.com/images/2022/09/01/ZzfuHD.png);
+  background-repeat:no-repeat; 
+  background-size:100% 60%;
+  -moz-background-size:100% 100%;
+}
+
+
+image{
+  width: 300rpx;
+  border-radius: 5%;
+}
+
+.image {
+  width: 270rpx;
+  height: 600rpx;
+  margin: 10rpx 10rpx 10rpx 130rpx;
+}
+
+.button{
+  background-color: brown;
+  width: 300rpx;
+  text-align: center;
+  font-size: 50rpx;
+  border: black;
+  border-radius: 5%;
+}
+
+.root {
+  width: 100%;
+   height: 100%;
+   background-color: #70c7da;
+   position: relative;
+}
+
